@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# vagrant up
+vagrant up
 
 sshpass -vvv -p openstack ssh-copy-id -f -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa.pub root@192.168.56.101
 
