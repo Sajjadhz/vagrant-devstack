@@ -15,25 +15,3 @@ echo "stack ALL=(ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/stackecho "[TASK 
 echo -e "openstack\nopenstack" | passwd stack >/dev/null 2>&1
 echo "export TERM=xterm" >> /etc/bash.bashrc
 sudo -u stack -i
-sudo id
-
-pwd
-whoami
-
-# sudo su
-# git clone https://opendev.org/openstack/devstack -b stable/zed
-# pwd
-# whoami
-# cd devstack
-# cp samples/local.conf .
-# cat >> local.conf <<'EOF'
-# ADMIN_PASSWORD=secret 
-# DATABASE_PASSWORD=$ADMIN_PASSWORD 
-# RABBIT_PASSWORD=$ADMIN_PASSWORD 
-# SERVICE_PASSWORD=$ADMIN_PASSWORD 
-# IP_VERSION=4 
-# LOGFILE=$DEST/logs/stack.sh.log 
-# LOG_COLOR=False 
-# HOST_IP="192.168.56.101"
-# EOF
-# ./stack.sh
